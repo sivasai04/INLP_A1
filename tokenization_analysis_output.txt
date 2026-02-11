@@ -1,0 +1,268 @@
+================================================================================
+TOKENIZATION ANALYSIS - TASK 1.3
+================================================================================
+
+This file contains tokenization examples for all 6 tokenizers:
+  - 3 English tokenizers (Whitespace, Regex, BPE)
+  - 3 Mongolian tokenizers (Whitespace, Regex, BPE)
+
+For each tokenizer, we show:
+  - 3 sensible examples (good for language modeling)
+  - 3 problematic examples (challenges for the tokenizer)
+================================================================================
+================================================================================
+ENGLISH TOKENIZATION ANALYSIS
+================================================================================
+
+### SENSIBLE EXAMPLES ###
+
+================================================================================
+Whitespace Tokenizer - English
+================================================================================
+
+Example 1:
+Input:  The quick brown fox jumps over the lazy dog.
+Tokens: ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog', '.']
+Count:  10 tokens
+
+Example 2:
+Input:  I can't believe it's already 2024!
+Tokens: ['I', 'can', "'", 't', 'believe', 'it', "'", 's', 'already', '2024', '!']
+Count:  11 tokens
+
+Example 3:
+Input:  Dr. Smith works at the hospital.
+Tokens: ['Dr', '.', 'Smith', 'works', 'at', 'the', 'hospital', '.']
+Count:  8 tokens
+
+
+================================================================================
+Regex Tokenizer - English
+================================================================================
+
+Example 1:
+Input:  The quick brown fox jumps over the lazy dog.
+Tokens: ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog', '.']
+Count:  10 tokens
+
+Example 2:
+Input:  I can't believe it's already 2024!
+Tokens: ['I', "can't", 'believe', "it's", 'already', '2024', '!']
+Count:  7 tokens
+
+Example 3:
+Input:  Dr. Smith works at the hospital.
+Tokens: ['Dr', '.', 'Smith', 'works', 'at', 'the', 'hospital', '.']
+Count:  8 tokens
+
+
+================================================================================
+BPE Tokenizer - English
+================================================================================
+
+Example 1:
+Input:  The quick brown fox jumps over the lazy dog.
+Tokens: ['The</w>', 'quick</w>', 'br', 'own</w>', 'fo', 'x</w>', 'j', 'um', 'ps</w>', 'over</w>', 'the</w>', 'l', 'az', 'y</w>', 'do', 'g.</w>']
+Count:  16 tokens
+
+Example 2:
+Input:  I can't believe it's already 2024!
+Tokens: ['I</w>', "can't</w>", 'believe</w>', "it's</w>", 'already</w>', '20', '24', '!</w>']
+Count:  8 tokens
+
+Example 3:
+Input:  Dr. Smith works at the hospital.
+Tokens: ['Dr.</w>', 'S', 'mi', 'th</w>', 'works</w>', 'at</w>', 'the</w>', 'hosp', 'it', 'al.</w>']
+Count:  10 tokens
+
+
+### PROBLEMATIC EXAMPLES ###
+
+================================================================================
+Whitespace Tokenizer - English
+================================================================================
+
+Example 1:
+Input:  don't can't won't shouldn't
+Tokens: ['don', "'", 't', 'can', "'", 't', 'won', "'", 't', 'shouldn', "'", 't']
+Count:  12 tokens
+
+Example 2:
+Input:  http://www.example.com/path?query=value
+Tokens: ['http', ':', '/', '/', 'www', '.', 'example', '.', 'com', '/', 'path', '?', 'query', '=', 'value']
+Count:  15 tokens
+
+Example 3:
+Input:  Price: $19.99 (20% off!!!)
+Tokens: ['Price', ':', '$', '19', '.', '99', '(', '20', '%', 'off', '!', '!', '!', ')']
+Count:  14 tokens
+
+
+================================================================================
+Regex Tokenizer - English
+================================================================================
+
+Example 1:
+Input:  don't can't won't shouldn't
+Tokens: ["don't", "can't", "won't", "shouldn't"]
+Count:  4 tokens
+
+Example 2:
+Input:  http://www.example.com/path?query=value
+Tokens: ['http', ':', '/', '/', 'www', '.', 'example', '.', 'com', '/', 'path', '?', 'query', '=', 'value']
+Count:  15 tokens
+
+Example 3:
+Input:  Price: $19.99 (20% off!!!)
+Tokens: ['Price', ':', '$', '19', '.', '99', '(', '20', '%', 'off', '!', '!', '!', ')']
+Count:  14 tokens
+
+
+================================================================================
+BPE Tokenizer - English
+================================================================================
+
+Example 1:
+Input:  don't can't won't shouldn't
+Tokens: ["don't</w>", "can't</w>", "won't</w>", 'sh', "ouldn't</w>"]
+Count:  5 tokens
+
+Example 2:
+Input:  http://www.example.com/path?query=value
+Tokens: ['http://www.', 'example', '.com/', 'pa', 'th', '?', 'qu', 'er', 'y', '=', 'value</w>']
+Count:  11 tokens
+
+Example 3:
+Input:  Price: $19.99 (20% off!!!)
+Tokens: ['Pr', 'ic', 'e:</w>', '$', '19', '.', '9', '9</w>', '(', '20', '%</w>', 'off', '!!', '!)</w>']
+Count:  14 tokens
+
+
+
+================================================================================
+MONGOLIAN TOKENIZATION ANALYSIS
+================================================================================
+
+### SENSIBLE EXAMPLES ###
+
+================================================================================
+Whitespace Tokenizer - Mongolian
+================================================================================
+
+Example 1:
+Input:  Монгол улсын нийслэл Улаанбаатар хот юм.
+Tokens: ['Монгол', 'улсын', 'нийслэл', 'Улаанбаатар', 'хот', 'юм', '.']
+Count:  7 tokens
+
+Example 2:
+Input:  Би өнөөдөр сургуульд явна.
+Tokens: ['Би', 'өнөөдөр', 'сургуульд', 'явна', '.']
+Count:  5 tokens
+
+Example 3:
+Input:  Манай гэр бүлд таван хүн байна.
+Tokens: ['Манай', 'гэр', 'бүлд', 'таван', 'хүн', 'байна', '.']
+Count:  7 tokens
+
+
+================================================================================
+Regex Tokenizer - Mongolian
+================================================================================
+
+Example 1:
+Input:  Монгол улсын нийслэл Улаанбаатар хот юм.
+Tokens: ['Монгол', 'улсын', 'нийслэл', 'Улаанбаатар', 'хот', 'юм', '.']
+Count:  7 tokens
+
+Example 2:
+Input:  Би өнөөдөр сургуульд явна.
+Tokens: ['Би', 'өнөөдөр', 'сургуульд', 'явна', '.']
+Count:  5 tokens
+
+Example 3:
+Input:  Манай гэр бүлд таван хүн байна.
+Tokens: ['Манай', 'гэр', 'бүлд', 'таван', 'хүн', 'байна', '.']
+Count:  7 tokens
+
+
+================================================================================
+BPE Tokenizer - Mongolian
+================================================================================
+
+Example 1:
+Input:  Монгол улсын нийслэл Улаанбаатар хот юм.
+Tokens: ['Монгол</w>', 'улсын</w>', 'нийслэл</w>', 'Улаанбаатар</w>', 'хот</w>', 'юм.</w>']
+Count:  6 tokens
+
+Example 2:
+Input:  Би өнөөдөр сургуульд явна.
+Tokens: ['Би</w>', 'өнөөдөр</w>', 'сургуульд</w>', 'яв', 'на.</w>']
+Count:  5 tokens
+
+Example 3:
+Input:  Манай гэр бүлд таван хүн байна.
+Tokens: ['Манай</w>', 'гэр</w>', 'бүл', 'д</w>', 'таван</w>', 'хүн</w>', 'байна.</w>']
+Count:  7 tokens
+
+
+### PROBLEMATIC EXAMPLES ###
+
+================================================================================
+Whitespace Tokenizer - Mongolian
+================================================================================
+
+Example 1:
+Input:  Утас: +976-11-123456 (24/7)
+Tokens: ['Утас', ':', '+', '976', '-', '11', '-', '123456', '(', '24', '/', '7', ')']
+Count:  13 tokens
+
+Example 2:
+Input:  www.монгол.mn эсвэл http://example.mn
+Tokens: ['www', '.', 'монгол', '.', 'mn', 'эсвэл', 'http', ':', '/', '/', 'example', '.', 'mn']
+Count:  13 tokens
+
+Example 3:
+Input:  Үнэ: 50,000₮ (10%-ийн хөнгөлөлттэй!!!)
+Tokens: ['Үнэ', ':', '50', ',', '000', '₮', '(', '10', '%', '-', 'ийн', 'хөнгөлөлттэй', '!', '!', '!', ')']
+Count:  16 tokens
+
+
+================================================================================
+Regex Tokenizer - Mongolian
+================================================================================
+
+Example 1:
+Input:  Утас: +976-11-123456 (24/7)
+Tokens: ['Утас', ':', '+', '976', '-', '11', '-', '123456', '(', '24', '/', '7', ')']
+Count:  13 tokens
+
+Example 2:
+Input:  www.монгол.mn эсвэл http://example.mn
+Tokens: ['www', '.', 'монгол', '.', 'mn', 'эсвэл', 'http', ':', '/', '/', 'example', '.', 'mn']
+Count:  13 tokens
+
+Example 3:
+Input:  Үнэ: 50,000₮ (10%-ийн хөнгөлөлттэй!!!)
+Tokens: ['Үнэ', ':', '50', ',', '000', '₮', '(', '10', '%', '-', 'ийн', 'хөнгөлөлттэй', '!', '!', '!', ')']
+Count:  16 tokens
+
+
+================================================================================
+BPE Tokenizer - Mongolian
+================================================================================
+
+Example 1:
+Input:  Утас: +976-11-123456 (24/7)
+Tokens: ['Утас', ':</w>', '+', '9', '7', '6', '-1', '1', '-1', '23', '4', '5', '6</w>', '(', '24', '/', '7', ')</w>']
+Count:  18 tokens
+
+Example 2:
+Input:  www.монгол.mn эсвэл http://example.mn
+Tokens: ['www.', 'монгол', '.mn</w>', 'эсвэл</w>', 'http', '://', 'e', 'x', 'am', 'p', 'le', '.mn</w>']
+Count:  12 tokens
+
+Example 3:
+Input:  Үнэ: 50,000₮ (10%-ийн хөнгөлөлттэй!!!)
+Tokens: ['Үнэ', ':</w>', '50', ',', '000', '₮</w>', '(', '10', '%', '-ийн</w>', 'хөнгөл', 'өл', 'т', 'тэй', '!!', '!', ')</w>']
+Count:  17 tokens
+

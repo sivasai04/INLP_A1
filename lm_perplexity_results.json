@@ -1,0 +1,38 @@
+{
+  "whitespace_none": {
+    "val_perplexity": 252915.64538199443,
+    "test_perplexity": 258799.41360045428
+  },
+  "whitespace_witten-bell": {
+    "val_perplexity": 290.05066461660584,
+    "test_perplexity": 292.67063967616633
+  },
+  "whitespace_kneser-ney": {
+    "val_perplexity": 278.73419150964753,
+    "test_perplexity": 281.3599936087923
+  },
+  "regex_none": {
+    "val_perplexity": 315486.19555752724,
+    "test_perplexity": 322278.1504269123
+  },
+  "regex_witten-bell": {
+    "val_perplexity": 314.7516400571963,
+    "test_perplexity": 317.36369755832084
+  },
+  "regex_kneser-ney": {
+    "val_perplexity": 303.9408971054007,
+    "test_perplexity": 306.5159601362783
+  },
+  "bpe_none": {
+    "val_perplexity": 147880.7815955938,
+    "test_perplexity": 150201.31583117385
+  },
+  "bpe_witten-bell": {
+    "val_perplexity": 113.52439589798458,
+    "test_perplexity": 114.00660417980501
+  },
+  "bpe_kneser-ney": {
+    "val_perplexity": 87.37690628117969,
+    "test_perplexity": 87.70592806396648
+  }
+}

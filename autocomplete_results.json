@@ -1,0 +1,57 @@
+{
+  "The quick brown": {
+    "whitespace_none": "The quick brown. The details of the problem. I am not",
+    "whitespace_witten-bell": "The quick brown. The details of the problem. I am not",
+    "whitespace_kneser-ney": "The quick brown. The point is that you can use the same",
+    "regex_none": "The quick brown. The details of the problem. I am not",
+    "regex_witten-bell": "The quick brown. The details of the problem. I am not",
+    "regex_kneser-ney": "The quick brown. The point is that the majority of the people",
+    "bpe_none": "The quick brown and the fishing boats. There are many",
+    "bpe_witten-bell": "The quick brown and the fishing boats. There are many",
+    "bpe_kneser-ney": "The quick brown and the flight of stairs to the"
+  },
+  "I can't believe": {
+    "whitespace_none": "I can' t believe it. I' m not sure if this is",
+    "whitespace_witten-bell": "I can' t believe it. I' m not sure if this is",
+    "whitespace_kneser-ney": "I can' t believe it. I' m not sure if this is",
+    "regex_none": "I can't believe that I have a few more days...",
+    "regex_witten-bell": "I can't believe that I have a few more days...",
+    "regex_kneser-ney": "I can't believe that I have a few more days...",
+    "bpe_none": "I can't believe that I have a few more things to do in",
+    "bpe_witten-bell": "I can't believe that I have a few more things to do in",
+    "bpe_kneser-ney": "I can't believe that I have a few more things to do in"
+  },
+  "In the": {
+    "whitespace_none": "In the meantime, I\u2019 m not sure if this is",
+    "whitespace_witten-bell": "In the meantime, I\u2019 m not sure if this is",
+    "whitespace_kneser-ney": "In the meantime, I\u2019 m not sure if this is",
+    "regex_none": "In the meantime, I\u2019 m not sure if this is",
+    "regex_witten-bell": "In the meantime, I\u2019 m not sure if this is",
+    "regex_kneser-ney": "In the meantime, I\u2019 m not sure if this is",
+    "bpe_none": "In the meantime, I am sure that the people who are",
+    "bpe_witten-bell": "In the meantime, I am sure that the people who are",
+    "bpe_kneser-ney": "In the meantime, I am sure that the people who are"
+  },
+  "She was": {
+    "whitespace_none": "She was a member of the family.\" The only thing",
+    "whitespace_witten-bell": "She was a member of the family.\" The only thing",
+    "whitespace_kneser-ney": "She was a little bit of a pain to get the best",
+    "regex_none": "She was a member of the family.\" The only thing",
+    "regex_witten-bell": "She was a member of the family.\" The only thing",
+    "regex_kneser-ney": "She was a little bit of a pain to get the best",
+    "bpe_none": "She was a member of the Lord Jesus Christ, and",
+    "bpe_witten-bell": "She was a member of the Lord Jesus Christ, and",
+    "bpe_kneser-ney": "She was a little bit of a mile from the shor"
+  },
+  "The president of": {
+    "whitespace_none": "The president of the United States. The next day, the last",
+    "whitespace_witten-bell": "The president of the United States. The next day, the last",
+    "whitespace_kneser-ney": "The president of the United States. The next day, the last",
+    "regex_none": "The president of the United States. The next day, the last",
+    "regex_witten-bell": "The president of the United States. The next day, the last",
+    "regex_kneser-ney": "The president of the United States. The next day, the last",
+    "bpe_none": "The president of the United States and Canada. We are also working",
+    "bpe_witten-bell": "The president of the United States and Canada. We are also working",
+    "bpe_kneser-ney": "The president of the United States and Canada. The hotel offers a"
+  }
+}

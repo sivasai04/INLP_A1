@@ -1,0 +1,90 @@
+{
+  "100000": {
+    "whitespace": {
+      "none": {
+        "val_perplexity": 1156887.2149488262,
+        "test_perplexity": 1175807.3320194317
+      },
+      "witten-bell": {
+        "val_perplexity": 474.22242240257384,
+        "test_perplexity": 478.46998026665784
+      },
+      "kneser-ney": {
+        "val_perplexity": 532.4284100316066,
+        "test_perplexity": 538.3437001112034
+      }
+    },
+    "regex": {
+      "none": {
+        "val_perplexity": 1422144.5109190375,
+        "test_perplexity": 1443722.882742363
+      },
+      "witten-bell": {
+        "val_perplexity": 516.933823004858,
+        "test_perplexity": 521.0287133847128
+      },
+      "kneser-ney": {
+        "val_perplexity": 585.7175726907268,
+        "test_perplexity": 591.607972331931
+      }
+    },
+    "bpe": {
+      "none": {
+        "val_perplexity": 884329.7899006044,
+        "test_perplexity": 897347.05547862
+      },
+      "witten-bell": {
+        "val_perplexity": 191.81536475367386,
+        "test_perplexity": 192.39799899644413
+      },
+      "kneser-ney": {
+        "val_perplexity": 144.96173826201982,
+        "test_perplexity": 145.29059862522618
+      }
+    }
+  },
+  "200000": {
+    "whitespace": {
+      "none": {
+        "val_perplexity": 740506.7654876327,
+        "test_perplexity": 752038.2503912083
+      },
+      "witten-bell": {
+        "val_perplexity": 404.96116857805856,
+        "test_perplexity": 409.0266869118721
+      },
+      "kneser-ney": {
+        "val_perplexity": 426.78069994715725,
+        "test_perplexity": 432.1015783172446
+      }
+    },
+    "regex": {
+      "none": {
+        "val_perplexity": 916142.4018797707,
+        "test_perplexity": 928728.903113292
+      },
+      "witten-bell": {
+        "val_perplexity": 440.9473677668951,
+        "test_perplexity": 444.97017261358934
+      },
+      "kneser-ney": {
+        "val_perplexity": 468.2135496621281,
+        "test_perplexity": 473.55043421139237
+      },
+      "bpe": {
+        "none": {
+          "val_perplexity": 664489.5683036044,
+          "test_perplexity": 672387.10225542
+        },
+        "witten-bell": {
+          "val_perplexity": 121.24836374100216,
+          "test_perplexity": 125.10025499914173
+        },
+        "kneser-ney": {
+          "val_perplexity": 92.12141009203132,
+          "test_perplexity": 96.18302152990120
+        }
+      }
+    }
+  }
+}
