@@ -93,7 +93,7 @@ class RegexTokenizer:
 class BPETokenizer:
     """Byte-Pair Encoding tokenizer implemented from scratch."""
     
-    def __init__(self, vocab_size: int = 1000, min_frequency: int = 2, unk_token: str = '<UNK>'):
+    def __init__(self, vocab_size: int = 5000, min_frequency: int = 3, unk_token: str = '<UNK>'):
         self.vocab_size = vocab_size
         self.min_frequency = min_frequency
         self.unk_token = unk_token
