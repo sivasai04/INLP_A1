@@ -1,6 +1,6 @@
 import re
 from collections import defaultdict, Counter
-from typing import List, Tuple
+from typing import List
 import pickle
 
 
