@@ -56,9 +56,9 @@ def main():
     save_tokenizer(ws_mn, 'models/tokenizers/whitespace_mn.pkl')
     save_tokenizer(regex_mn, 'models/tokenizers/regex_mn.pkl')
     save_tokenizer(bpe_mn, 'models/tokenizers/bpe_mn.pkl')
-    print("    Expected: All 6 tokenizers saved to models/tokenizers/")
+    print("All 6 tokenizers saved to models/tokenizers/")
     
-    # LANGUAGE MODEL TRAINING (Task 2)
+    # LANGUAGE MODEL TRAINING
     
     # Define tokenizers to process sequentially
     tokenizer_configs = [
@@ -72,13 +72,13 @@ def main():
     for tok_name, tokenizer in tokenizer_configs:
         print(f"Processing {tok_name} tokenizer...")
         
-        # 1. Tokenize data (only for this tokenizer)
+        # Tokenize data (only for this tokenizer)
         print(f"  Tokenizing data...")
         train_tokens = tokenizer.tokenize(en_train)
         val_tokens = tokenizer.tokenize(en_val)
         test_tokens = tokenizer.tokenize(en_test)
         
-        # 2. Train models for this tokenizer
+        # Train models for this tokenizer
         for smoothing in smoothing_methods:
             model_name = f"{tok_name}_{smoothing}"
             print(f"\n    - Training {model_name}...")
@@ -86,14 +86,14 @@ def main():
             lm = NGramLM(n=4, smoothing=smoothing)
             lm.train(train_tokens)
             
-            # 3. Evaluate Perplexity
+            # Evaluate Perplexity
             val_perplexity = lm.perplexity(val_tokens)
             test_perplexity = lm.perplexity(test_tokens)
             
             print(f"      Val Perplexity:  {val_perplexity:.2f}")
             print(f"      Test Perplexity: {test_perplexity:.2f}")
             
-            # 3.5. Save the trained model
+            #  Save the trained model
             os.makedirs('models/language_models', exist_ok=True)
             model_path = f'models/language_models/{model_name}.pkl'
             save_model(lm, model_path)

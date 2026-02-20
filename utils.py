@@ -98,30 +98,6 @@ def partition_data(text: str, train_ratio: float = 0.8,
     return '\n'.join(train_lines), '\n'.join(val_lines), '\n'.join(test_lines)
 
 
-def get_subsample(text: str, num_lines: int = 50000, seed: int = 42) -> str:
-    """
-    Extract a random sample of lines from text for computationally 
-    expensive tasks like BPE training.
-    
-    Args:
-        text: The source text (e.g., training partition)
-        num_lines: Number of lines to extract
-        seed: Random seed for reproducibility
-        
-    Returns:
-        A string containing the subsampled lines
-    """
-    lines = text.split('\n')
-    if len(lines) <= num_lines:
-        return text
-        
-    random.seed(seed)
-    # Using random.sample ensures we get a diverse set of lines 
-    # rather than just the first num_lines
-    sampled_lines = random.sample(lines, num_lines)
-    return '\n'.join(sampled_lines)
-
-
 def write_text(filepath: str, text: str):
     """Write text to file."""
     import os
